@@ -31,6 +31,7 @@ header {
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    border-radius: 40px;
 }
 
 .menu {
@@ -64,6 +65,78 @@ header {
 .menu li a:hover,
 .menu .active a {
     border-bottom: 5px solid #b28756;
+    color: #CCC;
 }
 
+
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    height: 100%;
+    width: 1000vw;
+} 
+
+.banner .slide {
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
+}
+
+.banner .slide span {
+    color: #b28756;
+}
+
+.banner .slide h2 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.banner .slide a {
+    font-size: 13px;
+    margin-top: 30px;
+    background-color: #b28756;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.banner .sliders_pointers {
+    position: absolute;
+    margin-top: -50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
 
