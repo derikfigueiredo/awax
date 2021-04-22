@@ -7,6 +7,7 @@
 body {
     font-family: 'Montserrat', Arial, Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -69,6 +70,18 @@ header {
 }
 
 
+.button {
+    font-size: 13px;
+    margin-top: 30px;
+    background-color: #b28756;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 
 .banner {
     height: calc(100vh - 100px);
@@ -105,18 +118,6 @@ header {
     font-size: 25px;
 }
 
-.banner .slide a {
-    font-size: 13px;
-    margin-top: 30px;
-    background-color: #b28756;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
 .banner .sliders_pointers {
     position: absolute;
     margin-top: -50px;
@@ -140,3 +141,114 @@ header {
     background-color: #b28756;
 }
 
+
+
+
+
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section_title,
+.default .section_desc {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.default .section_title {
+    font-size: 20px;
+}
+
+.default .section_desc {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section_body {
+    max-width: 1140px;
+    margin: auto;
+  
+}
+
+.default.light { 
+    background-color: #F7F7F7;
+}
+
+.default.light .section_title,
+.default.light .sectio_body {
+    color: #000000;
+}
+
+.default.dark {
+    background-color: #000000;
+}
+
+.default.dark .section_title,
+.default.dark .section_body {
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section_about_us {
+    display: flex;
+}
+
+.section_about_us_left {
+    flex: 1;
+}
+
+.section_about_us_left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section_about_us_right {
+    width: 520px;
+    text-align: center;
+}
+
+.section_about_us_right img {
+    width: 480px;
+    box-shadow: 5px 10px 15px #333;
+}
+
+.section_services {
+    display: flex;
+}
+
+.section_services .section_service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+}
+
+.section_services .section_service:first-child {
+    border-left: 1px solid #333;
+}
+
+.section_service h4{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.section_service p {
+    color: #999;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 13px;
+}
