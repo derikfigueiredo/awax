@@ -78,7 +78,7 @@ header {
     color: #FFFFFF;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 20px;
 }
 
@@ -505,24 +505,60 @@ header {
 .section-happy-clients .pointer.active {
     background-color: #b28756;
 }
-
-
-.section-brands {
-    height: 130px;
-    width: 100vw;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section-brands .brand {
-    margin: 0px 40px;
-    width: 80px;
-}
 /*//////////////////////////////////////////////////////*/
 
 
+
+
+/************ SECTION COMPANIES **********/
+.section-companies {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+.section-companies--area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-company {
+    flex: 1;
+    text-align: center;
+}
+/*//////////// SECTION COMPANIES /////////////*/
+
+
+/************** SECTION PRICE ***************/
+.section-price {
+    display: flex;
+}
+.section-price-item {
+    background-color: #FFFFFF;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-price--name {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section-price--money {
+    font-size: 20px;
+    font-weight: 700;
+}
+.section-price--period {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.button.button-dark {
+    background-color: #000000;
+    text-transform: uppercase;
+}
 
 
