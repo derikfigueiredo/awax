@@ -206,63 +206,62 @@ header {
 
 
 
-
+/*********** SECTION ABOUT US ************/
 .section_about_us {
     display: flex;
 }
-
 .section_about_us_left {
     flex: 1;
 }
-
 .section_about_us_left p {
     font-size: 14px;
     line-height: 25px;
 }
-
 .section_about_us_right {
     width: 520px;
     text-align: center;
 }
-
 .section_about_us_right img {
     width: 480px;
     box-shadow: 5px 10px 15px #333;
 }
+/*//////////////////////////////////////////////*/
 
+
+
+/**************** SECTION SERVICES **************/
 .section_services {
     display: flex;
 }
-
 .section_services .section_service {
     flex: 1;
     text-align: center;
     border-right: 1px solid #333;
 }
-
 .section_services .section_service:first-child {
     border-left: 1px solid #333;
 }
-
 .section_service h4{
     font-size: 18px;
     margin-top: 20px;
 }
-
 .section_service p {
     color: #999;
     margin-top: 10px;
     line-height: 20px;
     font-size: 13px;
 }
+/*//////////////////////////////////////////////*/
 
+
+
+/************* SECTION PROJECTS **************/
 .section-projects {
     text-align: center;
     /*display: flex;
     flex-direction: column;
     align-items: center;*/
 }
-
 .section-projects--filters {
     border: 1px solid #CCC;
     background-color: #EEE;
@@ -270,12 +269,10 @@ header {
     padding: 3px 20px;
     display: inline-block;
 }
-
 .section-projects--filters ul,
 .section-projects--filters ul li {
     list-style: none;
 }
-
 .section-projects--filters ul li {
     display: inline-block;
     font-size: 13px;
@@ -286,16 +283,12 @@ header {
     border-bottom: 3px solid #EEE;
     cursor: pointer;
 }
-
 .section-projects--filters ul li:first-child {
     border: 0;
 }
-
 .section-projects--filters ul li:hover {
     border-bottom: 3px solid #b28756;
 }
-
-
 .section-projects--photos {
     margin-top: 20px;
     width: 100vw;
@@ -304,22 +297,18 @@ header {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .section-projects--photo {
     width: 280px;
 }
-
 .section-projects--photoarea {
     width: 260px;
     height: 160px;
     margin: 10px;
 }
-
 .section-projects--photoarea img {
     width: inherit;
     height: inherit;
 }
-
 .section-projects--photoinfo {
     width: inherit;
     height: inherit;
@@ -331,18 +320,15 @@ header {
     justify-content: center;
     justify-content: center;
 }
-
 .section-projects--photoinfo h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
 }
-
 .section-projects--photo:hover .section-projects--photoinfo {
     display: flex;
 }
-
-
+/*//////////////////////////////////////////////*/
 
 
 
@@ -438,6 +424,7 @@ header {
 /*//////////////////////////////////////////////////////*/
 
 
+
 /**************** HAPPY CLIENTS SECTION ***************/
 .section-happy-clients {
     max-width: 700px;
@@ -485,8 +472,6 @@ header {
     font-size: 13px;
     font-weight: 500;
 }
-
-
 .section-happy-clients .sliders_pointers {
     margin-top: 30px;
     display: flex;
@@ -509,7 +494,6 @@ header {
 
 
 
-
 /************ SECTION COMPANIES **********/
 .section-companies {
     border-top: 1px solid #DDD;
@@ -526,6 +510,7 @@ header {
     text-align: center;
 }
 /*//////////// SECTION COMPANIES /////////////*/
+
 
 
 /************** SECTION PRICE ***************/
@@ -560,5 +545,70 @@ header {
     background-color: #000000;
     text-transform: uppercase;
 }
+.button.button-dark:hover {
+    background-color: #b28756;
+}
+.section-price-item:hover {
+   box-shadow: 0px 0px 10px #000000;
+}
+/*//////////////////////////////////////////////*/
 
+
+
+/******** SECTION PREMIUM **********/
+.default.light.premium {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    background-color: #FFFFFF;
+}
+.section-premium {
+    display: flex;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 50px;
+    justify-content: flex-end;
+}
+.section-premium-object img {
+    width: 300px;
+}
+.section-premium-right {
+    width: 560px;
+    padding-left: 30px;
+}
+.section-premium-feature {
+    display: flex;
+    margin-bottom: 20px;
+}
+.section-premium-feature img {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+.section-premium-feature h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-premium-feature p {
+    color: #999;
+    line-height: 20px;
+}
+.default.light.premium .sliders_pointers {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default.light.premium .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.default.light.premium .pointer.active {
+    background-color: #b28756;
+}
 
