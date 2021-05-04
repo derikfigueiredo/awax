@@ -207,21 +207,21 @@ header {
 
 
 /*********** SECTION ABOUT US ************/
-.section_about_us {
+.section-about-us {
     display: flex;
 }
-.section_about_us_left {
+.section-about-us-left {
     flex: 1;
 }
-.section_about_us_left p {
+.section-about-us-left p {
     font-size: 14px;
     line-height: 25px;
 }
-.section_about_us_right {
+.section-about-us-right {
     width: 520px;
     text-align: center;
 }
-.section_about_us_right img {
+.section-about-us-right img {
     width: 480px;
     box-shadow: 5px 10px 15px #333;
 }
@@ -230,22 +230,22 @@ header {
 
 
 /**************** SECTION SERVICES **************/
-.section_services {
+.section-services {
     display: flex;
 }
-.section_services .section_service {
+.section-services .section-service {
     flex: 1;
     text-align: center;
     border-right: 1px solid #333;
 }
-.section_services .section_service:first-child {
+.section-services .section-service:first-child {
     border-left: 1px solid #333;
 }
-.section_service h4{
+.section-service h4{
     font-size: 18px;
     margin-top: 20px;
 }
-.section_service p {
+.section-service p {
     color: #999;
     margin-top: 10px;
     line-height: 20px;
@@ -435,11 +435,12 @@ header {
 .section-happy-clients .sliders {
     width: 1000vw;
     height: 100%;
-    margin-left: -1400px;
+    margin-left: 0px;
 }
 .section-happy-clients .slide {
     height: 100%;
-    width: 700px;
+    width: 100vw;
+    max-width: 700px;
     display: inline-block;
 }
 .section-happy-clients .slidearea {
@@ -519,7 +520,7 @@ header {
 }
 .section-price-item {
     background-color: #FFFFFF;
-    width: 500px;
+    width: 260px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
@@ -564,7 +565,7 @@ header {
 .section-premium {
     border-bottom: 1px solid #DDD;
     padding-bottom: 30px;
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 .section-premium .sliders {
     width: 1000vw;
@@ -786,10 +787,10 @@ header {
 footer {
     background-color: #000000;
     width: 100vw;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
 }
 .footer-area {
-    width: 100vw;
+    width: 100%;
     max-width: 1140px;
     margin: auto;
     display: flex;
@@ -839,4 +840,122 @@ footer {
     font-size:14px;
 }
 /*//////////////////////////////////////////*/
+
+
+
+
+/************* RESPONSIVIDADE ******************/
+@media (min-width: 450px) and (max-width: 800px) {
+    nav {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.85);
+        height: calc(100vh - 100px);
+        width: 60vw;
+        z-index: 99;
+        top: 100px;
+        right: 0;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .menu li a {
+        border: 0;
+        font-size: 20px;
+        margin-left: 50px;
+        height: 55px;
+        font-weight: 700;
+    }
+    .menu li a:hover,
+    .menu .active a {
+        border: 0;
+        color: #b28756;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+
+
+    .section-about-us {
+        flex-direction: column;
+    }
+    .section-about-us-left {
+        margin: 0 20px 40px 30px;
+    }
+    .section-about-us-right {
+        width: 100vw;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+    .section-service {
+        min-width: 280px;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .section-services .section-service:first-child {
+        border-left: 0;
+    }
+    .section-team {
+        max-width: 580px;
+    }
+
+
+
+    .section-happy-clients .slidearea {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+    .section-companies--area {
+        flex-wrap: wrap;
+    }
+    .section-company {
+        min-width: 200px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .section-price {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-price-item {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .section-premium .slidearea {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-premium .section-premium-left {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+   
+    
+
+    .section-facts {
+        flex-wrap: wrap;
+    }
+    .section-fact {
+        min-width: 250px;
+    }
+
+
+
+    .footer-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer--item {
+        margin-bottom: 20px;
+    }
+    .footer--item.area2 {
+        width: 400px;
+    }
+}
 
